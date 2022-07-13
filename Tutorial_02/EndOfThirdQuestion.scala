@@ -1,4 +1,4 @@
-package Tutorial_03
+package Tutorial_02
 
 object EndOfThirdQuestion {
   def main(args: Array[String]) = {

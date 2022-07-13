@@ -1,4 +1,4 @@
-package Tutorial_03
+package Tutorial_02
 
 object Q1_2_3 {
   def main(args: Array[String]) = {
