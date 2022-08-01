@@ -36,15 +36,20 @@ object Q_5 {
     }
 
     def formatNames(str: String, fun: String => String): Unit = {
-        println(fun(str))
+        print(fun(str))
     }
 
     def main(args: Array[String]) = {
         var names = Array("Benny", "Niroshan", "Saman", "Kumara")
 
         formatNames(names(0), toUpper)
-        formatNames(names(1), toUpper)
+        println()
+        formatNames(names(1).substring(0, 2), toUpper)
+        print(s"${names(1).substring(3)}\n")
         formatNames(names(2), toLower)
-        formatNames(names(3), toLower)
+        println()
+        formatNames(names(3).substring(0, 1), toUpper)
+        print(s"${names(3).substring(1, names(3).length - 1)}")
+        formatNames(names(3).substring(names(3).length - 1), toUpper)
     }
 }
